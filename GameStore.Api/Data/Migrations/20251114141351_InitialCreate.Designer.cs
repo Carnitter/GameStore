@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameStore.Api.Data.Migrations
 {
     [DbContext(typeof(GameStoreContext))]
-    [Migration("20251113150939_SeedGenres")]
-    partial class SeedGenres
+    [Migration("20251114141351_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,7 +58,7 @@ namespace GameStore.Api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genre");
+                    b.ToTable("Genres");
 
                     b.HasData(
                         new
